@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body> 
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento: 
+            <input type="number" style="width: 60px; height: 20px;" name="txtano" id="txtano" min="0"></p>
+            <p>Sexo: 
+            <!-- <select name="Selecione" id="">
+                <option value="escolher">Escolher</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option></p>
+            </select> Essa seria uma forma de fazer com que
+            o usuário escolhesse entre duas opções-->
+            <input type="radio" name="radsex" id="mas" checked>
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Feminino</label></p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div style="margin-top: -20px;" id="res">
+            Preencha os dados acima para obter o resultado!
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy;Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

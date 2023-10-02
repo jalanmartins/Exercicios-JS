@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidades da SULA</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        p {
+            font: normal 13pt Arial;
+        }
+    </style>
+</head>
+<body> <h1>Curiosidade Futebolísticas da América do sul</h1>
+    <p>Digite um país da america do Sul e descubra uma curiosidade futebolística dele:</p>
+    <input type="text" name="p" id="p">
+    <input type="button" value="Curiosidade" onclick="buscar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function buscar() {
+            var txtpais = document.getElementById('p')
+            var res = document.getElementById('res')
+            var pais = String(txtpais.value)
+            res.innerHTML = `<p>O País escolhido foi <strong>${pais}</strong>.<p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += `A Seleção do ${pais} é a Seleção que mais vezes participou e ganhou copas do mundo.`
+            } else if (pais == 'Argentina') {
+                res.innerHTML += `A ${pais} é o País que tem mais titulos da Libertadores da América.`
+            } else {
+                res.innerHTML += `Esse país não tem relevância.`
+            }
+
+        }
+    </script>
+</body>
+</html>
